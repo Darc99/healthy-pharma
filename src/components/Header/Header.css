@@ -1,0 +1,5 @@
+.header {
+    color: blue;
+    border-bottom: 10px black dashed;
+    min-height: 15vh;
+}
