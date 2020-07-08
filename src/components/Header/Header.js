@@ -1,18 +1,40 @@
-import React, { Component } from 'react';
-import './Header.css'
+import React from 'react';
 
-class Header extends Component {
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
-  render() {
+const useStyles = makeStyles((theme) => ({
+  appBar: {
+    backgroundColor: "white",
+    float: "left"
+  },    
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
+
+function Header() {
+    const classes = useStyles();
 
     return (
 
-      <div className= 'header'>
-        Header
+      <div>
+        <AppBar className={classes.appBar} position="static">
+          <Toolbar>
+            <Typography variant="h6" color="primary" className={classes.title}>
+              Envato Care
+            </Typography>
+          </Toolbar>
+        </AppBar>
       </div>
 
     )
   }
-}
+
 
 export default Header;
