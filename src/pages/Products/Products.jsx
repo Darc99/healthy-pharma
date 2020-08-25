@@ -38,7 +38,7 @@ function Products() {
 
         <Container maxWidth="lg" className={classes.aboutSection}>
             <Typography variant="h4" className={classes.aboutTitle}>
-              About Us
+              Products
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>

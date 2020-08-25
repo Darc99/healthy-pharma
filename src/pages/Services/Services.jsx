@@ -26,8 +26,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Services() {
     const classes = useStyles();
-    const { drugs } = this.props;
-    console.log(drugs);
     return (
 
       <div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 import Header from './components/Header/Header';
@@ -52,18 +52,24 @@ const drugs = [
   }
 ]
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Services drugs={drugs}/>
-      <Products />
-      <Contact />
-      <Footer />
-    </div>
-  );
+const Context = React.createContext();
+
+class App extends Component {
+
+  render() {
+
+    return (
+      <Context.Provider value={drugs} className="App">
+        <Header />
+        <Home />
+        <About />
+        <Services />
+        <Products /> 
+        <Contact />
+        <Footer />
+      </Context.Provider>
+    )
+  }
 }
 
 export default App;
