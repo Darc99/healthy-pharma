@@ -1,11 +1,54 @@
 import React from 'react';
 
+import Drugs from '../../components/Drugs/Drugs'
+
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { Card, CardMedia, CardContent, CardActionArea, Paper, Box, Button } from '@material-ui/core';
-
+const drugs = [
+  {
+    id: 1,
+    name: 'Anti-malaria Drugs',
+    img: '',
+  },
+  {
+    id: 2,
+    name: 'Cough Syrups',
+    img: ''    
+  },
+  {
+    id: 3,
+    name: 'Body Lotion',
+    img: '' 
+  },
+  {
+    id: 4,
+    name: 'Diet Aiding Drugs',
+    img: ''    
+  },
+  {
+    id: 5,
+    name: 'Antibiotics',
+    img: ''    
+  },
+  {
+    id: 6,
+    name: 'Eye Drops',
+    img: ''    
+  },
+  {
+    id: 7,
+    name: 'Diabetes Drugs',
+    img: ''    
+  },
+  {
+    id: 8,
+    name: 'Anti-allergy Drugs',
+    img: ''    
+  }
+]
 // CardActions
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
@@ -35,11 +78,12 @@ function Products() {
     return (
 
       <div>
-
+        
         <Container maxWidth="lg" className={classes.aboutSection}>
             <Typography variant="h4" className={classes.aboutTitle}>
               Products
             </Typography>
+            <Drugs drugs={drugs}/>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>

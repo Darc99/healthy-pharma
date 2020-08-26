@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 
-// class Drugs extends Component {
+class Drugs extends Component {
 
-//   render() {
-
-//     return (
-
-
-
-//     )
-//   }
-// }
-
-const Context = React.createContext();
-
-function Drugs ({ drugs }) {
-  return (
-    <Context.Consumer>
+  render() {
+    console.log(this.props.drugs)
+    return (
       <div>
-            
-      {(drugs) => (
-        console.log(drugs)
-      )}
-      Drug
+        {this.props.drugs.map((drug) => (
+          <li key={drug}>{drug.name}</li>
+        ))}
       </div>
-
-    </Context.Consumer>
-  )
+    )
+  }
 }
+
+// const Context = React.createContext();
+
+// function Drugs ({ drugs }) {
+//   return (
+//     <Context.Consumer>
+//       <div>
+            
+//       {(drugs) => (
+//         console.log(drugs)
+//       )}
+//       Drug
+//       </div>
+
+//     </Context.Consumer>
+//   )
+// }
 
 export default Drugs;
