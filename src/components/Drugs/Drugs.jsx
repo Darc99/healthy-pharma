@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import './Drugs.css';
 
 class Drugs extends Component {
   
   render() {
     console.log(this.props.drugs)
     return (
-      <div>
+      <ol className='drug-list'>
         {this.props.drugs.map((drug) => (
-          <div key={drug.id} >
-            <span>{drug.img}</span>
-            <span className='drugs'>{drug.name}</span>
-          </div>
+          <li className='drug-list-item'  key={drug.id} >
+            <div>{drug.img}</div>
+            <div className='drugs'>{drug.name}</div>
+          </li>
         ))}
-      </div>
+      </ol>
     )
   }
 }

@@ -6,22 +6,25 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { Card, CardMedia, CardContent, CardActionArea, Paper, Box, CardActions } from '@material-ui/core';
+import { Card, CardMedia, CardActionArea, CardActions } from '@material-ui/core';
 const drugs = [
   {
     id: 1,
     name: 'Anti-malaria Drugs',
     img: '',
+    flex: 'start'
   },
   {
     id: 2,
     name: 'Cough Syrups',
-    img: ''    
+    img: '',
+    flex: 'center'
   },
   {
     id: 3,
     name: 'Body Lotion',
-    img: '' 
+    img: '' ,
+    flex: 'end'
   },
   {
     id: 4,
@@ -51,10 +54,10 @@ const drugs = [
 ]
 // CardActions
 const useStyles = makeStyles((theme) => ({
-  serviceSection: {
+  productSection: {
     paddingTop: theme.spacing(3)
   },
-  serviceTitle: {
+  productTitle: {
     //float:"left",
     fontWeight: 800,
     paddingBottom: theme.spacing(3)
@@ -64,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 240
+  },
+  btn: {
+    float: "right"
   }
 }));
 
@@ -73,13 +79,16 @@ function Products() {
 
       <div>
 
-        <Container maxWidth="lg" className={classes.serviceSection}>
-            <Typography variant="h4" className={classes.serviceTitle}>
-              Products
+        <Container maxWidth="lg" className={classes.productSection}>
+            <Typography variant="h4" className={classes.productTitle}>
+              Drugs
             </Typography>
             <Drugs drugs={drugs} />
+            <Typography variant="h4" className={classes.productTitle}>
+              Products
+            </Typography>
             <Grid container spacing={3}>
-              <Grid item xs={12} sm={4} md={4}>
+              <Grid item xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardActionArea>
                     <CardMedia 
@@ -87,20 +96,18 @@ function Products() {
                       image=""
                       title=""
                     />
-                    {/* <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        Original
-                      </Typography>
-                      <Typography variant="body2" color="textSecondary" component="p">
-                         Our drugs are made using only the finest of technologies
-                      </Typography>
-                    </CardContent> */}
                   </CardActionArea>
-                  <CardActions>Medical Checkups</CardActions>
+                  <CardActions>
+                    <span>
+                      <span>Nose</span>
+                      <span>Nose</span>
+                    </span>
+                  </CardActions>
+                  
                 </Card>
               </Grid>              
 
-              <Grid item xs={12} sm={4} md={4}>
+              <Grid item xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                     <CardActionArea>
                       <CardMedia 
@@ -108,20 +115,12 @@ function Products() {
                         image=""
                         title=""
                       />
-                      {/* <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                          Professional
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                        Our staff holds some of the most sort after professionals on the planet
-                        </Typography>
-                      </CardContent> */}
                     </CardActionArea>
-                    <CardActions>Laboratory Services</CardActions>
+                    <CardActions>Inhaler</CardActions>
                   </Card>
               </Grid>              
 
-              <Grid item xs={12} sm={4} md={4}>
+              <Grid item xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardActionArea>
                     <CardMedia 
@@ -129,16 +128,21 @@ function Products() {
                       image=""
                       title=""
                     />
-                    {/* <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        Safe
-                      </Typography>
-                      <Typography variant="body2" color="textSecondary" component="p">
-                      Our drugs are made with saftey in mind. We assure no side effects will ensue upon using drugs from us.
-                      </Typography>
-                    </CardContent> */}
                   </CardActionArea>
-                  <CardActions>Medical Counselling</CardActions>
+                  <CardActions>Malaria Drugs</CardActions>
+                </Card>
+              </Grid>      
+
+              <Grid item xs={12} sm={6} md={6}>
+                <Card className={classes.card}>
+                  <CardActionArea>
+                    <CardMedia 
+                      className={classes.media}
+                      image=""
+                      title=""
+                    />
+                  </CardActionArea>
+                  <CardActions>Cough Drugs</CardActions>
                 </Card>
               </Grid>          
 
