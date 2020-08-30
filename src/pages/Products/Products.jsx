@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { Card, CardMedia, CardActionArea, CardActions } from '@material-ui/core';
+import { Card, CardMedia, CardActionArea, CardActions, Button, Box } from '@material-ui/core';
 const drugs = [
   {
     id: 1,
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     height: 240
   },
   btn: {
-    float: "right"
+    justifyContent: 'flex-end'
   }
 }));
 
@@ -98,12 +98,17 @@ function Products() {
                     />
                   </CardActionArea>
                   <CardActions>
-                    <span>
-                      <span>Nose</span>
-                      <span>Nose</span>
-                    </span>
+                    <div>
+                      <span>Nose Mask</span>
+                      
+                    </div>
+                    <Box className={classes.btn}>
+                        <Button variant="contained">Buy</Button>
+                    </Box>
                   </CardActions>
-                  
+                  {/* <CardActions className={classes.btn} >
+                      Btn
+                    </CardActions> */}
                 </Card>
               </Grid>              
 
@@ -116,7 +121,12 @@ function Products() {
                         title=""
                       />
                     </CardActionArea>
-                    <CardActions>Inhaler</CardActions>
+                    <CardActions>
+                      Inhaler
+                      <Box className={classes.btn}>
+                        <Button variant="contained">Buy</Button>
+                      </Box>
+                    </CardActions>
                   </Card>
               </Grid>              
 
@@ -129,7 +139,12 @@ function Products() {
                       title=""
                     />
                   </CardActionArea>
-                  <CardActions>Malaria Drugs</CardActions>
+                  <CardActions>
+                    Malaria Drugs
+                    <Box className={classes.btn}>
+                        <Button variant="contained">Buy</Button>
+                    </Box>
+                  </CardActions>
                 </Card>
               </Grid>      
 
@@ -142,7 +157,12 @@ function Products() {
                       title=""
                     />
                   </CardActionArea>
-                  <CardActions>Cough Drugs</CardActions>
+                  <CardActions>
+                    Cough Drugs
+                    <Box className={classes.btn}>
+                        <Button variant="contained">Buy</Button>
+                    </Box>
+                  </CardActions>
                 </Card>
               </Grid>          
 
