@@ -68,8 +68,16 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 240
   },
+  box: {
+    //justifyContent: 'flex-end'
+    paddingLeft: theme.spacing(7)
+  },
   btn: {
-    justifyContent: 'flex-end'
+    width: "100%"
+  },
+  txt: {
+    justifyContent: 'flex-start',
+    textAlign: 'center',
   }
 }));
 
@@ -98,13 +106,24 @@ function Products() {
                     />
                   </CardActionArea>
                   <CardActions>
-                    <div>
-                      <span>Nose Mask</span>
-                      
-                    </div>
-                    <Box className={classes.btn}>
-                        <Button variant="contained">Buy</Button>
-                    </Box>
+                    <Grid container justify="space-between">
+                      <Grid item xs={6} sm={6} md={6} className={classes.txt}>
+                        <div>
+                          <span>Nose Mask</span>
+                        </div>
+                      </Grid>
+                      <Grid item xs={6} sm={6} md={6} >
+                        <Box className={classes.box}>
+                          <Button 
+                            variant="contained"
+                            color="primary"
+                            className={classes.btn}
+                          >
+                              Buy
+                            </Button>
+                        </Box>
+                      </Grid>
+                    </Grid>
                   </CardActions>
                   {/* <CardActions className={classes.btn} >
                       Btn
@@ -122,10 +141,24 @@ function Products() {
                       />
                     </CardActionArea>
                     <CardActions>
-                      Inhaler
-                      <Box className={classes.btn}>
-                        <Button variant="contained">Buy</Button>
-                      </Box>
+                      <Grid container justify="space-between">
+                        <Grid item xs={6} sm={6} md={6} className={classes.txt}>
+                          <div>
+                            <span>Inhaler</span>
+                          </div>
+                        </Grid>
+                        <Grid item xs={6} sm={6} md={6} >
+                          <Box className={classes.box}>
+                            <Button 
+                              variant="contained"
+                              color="primary"
+                              className={classes.btn}
+                            >
+                                Buy
+                              </Button>
+                          </Box>
+                        </Grid>
+                      </Grid>
                     </CardActions>
                   </Card>
               </Grid>              
@@ -140,10 +173,24 @@ function Products() {
                     />
                   </CardActionArea>
                   <CardActions>
-                    Malaria Drugs
-                    <Box className={classes.btn}>
-                        <Button variant="contained">Buy</Button>
-                    </Box>
+                  <Grid container justify="space-between">
+                      <Grid item xs={6} sm={6} md={6} className={classes.txt}>
+                        <div>
+                          <span>Malaria Drugs</span>
+                        </div>
+                      </Grid>
+                      <Grid item xs={6} sm={6} md={6} >
+                        <Box className={classes.box}>
+                          <Button 
+                            variant="contained"
+                            color="primary"
+                            className={classes.btn}
+                          >
+                              Buy
+                            </Button>
+                        </Box>
+                      </Grid>
+                    </Grid>
                   </CardActions>
                 </Card>
               </Grid>      
@@ -158,10 +205,24 @@ function Products() {
                     />
                   </CardActionArea>
                   <CardActions>
-                    Cough Drugs
-                    <Box className={classes.btn}>
-                        <Button variant="contained">Buy</Button>
-                    </Box>
+                    <Grid container justify="space-between">
+                      <Grid item xs={6} sm={6} md={6} className={classes.txt}>
+                        <div>
+                          <span>Cough Drugs</span>
+                        </div>
+                      </Grid>
+                      <Grid item xs={6} sm={6} md={6} >
+                        <Box className={classes.box}>
+                          <Button 
+                            variant="contained"
+                            color="primary"
+                            className={classes.btn}
+                          >
+                              Buy
+                            </Button>
+                        </Box>
+                      </Grid>
+                    </Grid>
                   </CardActions>
                 </Card>
               </Grid>          
