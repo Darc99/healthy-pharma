@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5) (rgba(0, 0, 0, 0.5)), url
     ('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80')`,
     height: "500px",
+    width: "100%",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
