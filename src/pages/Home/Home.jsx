@@ -35,7 +35,8 @@ function Home() {
 
       <div>
         <Box className={classes.hero}>
-          <Box>YOOOO</Box>
+          {/* <Box>YOOOO</Box> */}
+          {/* <img src={backg}/> */}
         </Box>
       </div>
 

@@ -72,7 +72,7 @@ function Footer() {
         </Grid>
         <Grid container spacing={3} justify="center" className={classes.bottom}>
           <Grid item xs={12} sm={12} md={12} >
-            Copyright © 2020 Evanto Care. All Rights Reserved
+            Copyright © 2020 Evanto Care. All Rights Reserved.
           </Grid>
         </Grid>
       </Container>

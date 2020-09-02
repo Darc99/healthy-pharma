@@ -1,4 +1,5 @@
 import React from 'react';
+import About1 from '../../img/image1.png';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -24,6 +25,23 @@ const useStyles = makeStyles((theme) => ({
   },
   aboutBelow: {
     paddingTop: theme.spacing(4)
+  },  
+  img: {
+    paddingTop: "75px",
+    height: "360px"    
+  },
+  right: {
+    textAlign: "left",
+    paddingTop: "130px"
+  },  
+  circle: {
+    width: "500px",
+    height: "500px",
+    borderRadius: "50%",
+    backgroundColor: "#1976d2"
+  },
+  btn: { 
+    paddingTop: theme.spacing(2)
   },
   paper: {
     height: 360
@@ -109,11 +127,13 @@ function About() {
             
             <Grid container className={classes.aboutBelow}>
               <Grid item xs={12} sm="auto" md={6}>
-                <Paper className={classes.paper}></Paper>
+                <div className={classes.circle}>
+                  <img src={About1} className={classes.img}/>
+                </div>
               </Grid>
-              <Grid item xs={12} sm="auto" md={6}>
-                <Paper className={classes.paper}>
-                <Typography variant="body2" color="textSecondary" component="p">
+              <Grid item xs={12} sm="auto" md={6} className={classes.right}>
+                {/* <Paper className={classes.paper}> */}
+                <Typography variant="h5" color="textSecondary" component="p">
                 At Evanto Care we are strong belivers in the wealth that
                   lies in health and as such we always seek for the
                   perfection of health within our clients. With 60 years of
@@ -121,11 +141,22 @@ function About() {
                   that prevent man from achiveing the perfect well
                   being. Personalized drugs make it easier for illnesses to
                   be managed and of course at pocket friendly prices.      
-                </Typography>            
+                </Typography>  
+                <Grid container justify="center" className={classes.btn}>
+                  <Grid item>
                   <Box>
-                    <Button variant="contained">Read More</Button>
+                    <Button 
+                      variant="contained"
+                      color="primary" 
+                      size="large"
+                    >
+                      Read More
+                    </Button>
                   </Box>
-                </Paper>
+                  </Grid>  
+                </Grid>          
+                  
+                {/* </Paper> */}
 
               </Grid>
             </Grid>
