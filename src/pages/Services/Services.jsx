@@ -1,4 +1,7 @@
 import React from 'react';
+import Rec1 from '../../img/Rec1.png';
+import Rec2 from '../../img/Rec2.png';
+import Rec3 from '../../img/Rec3.png';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -40,7 +43,7 @@ function Services() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Rec1}
                       title=""
                     />
                     {/* <CardContent>
@@ -61,7 +64,7 @@ function Services() {
                     <CardActionArea>
                       <CardMedia 
                         className={classes.media}
-                        image=""
+                        image={Rec2}
                         title=""
                       />
                       {/* <CardContent>
@@ -82,7 +85,7 @@ function Services() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Rec3}
                       title=""
                     />
                     {/* <CardContent>
