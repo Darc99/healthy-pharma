@@ -1,4 +1,9 @@
 import React from 'react';
+import Rec4 from '../../img/Rec4.png';
+import Rec5 from '../../img/Rec5.png';
+import Rec6 from '../../img/Rec6.png';
+import Rec7 from '../../img/Rec7.png';
+
 
 import Drugs from '../../components/Drugs/Drugs'
 
@@ -66,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%"
   },
   media: {
-    height: 240
+    height: 240,
+    width: "100%"
   },
   box: {
     //justifyContent: 'flex-end'
@@ -101,7 +107,7 @@ function Products() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Rec4}
                       title=""
                     />
                   </CardActionArea>
@@ -136,7 +142,7 @@ function Products() {
                     <CardActionArea>
                       <CardMedia 
                         className={classes.media}
-                        image=""
+                        image={Rec5}
                         title=""
                       />
                     </CardActionArea>
@@ -168,7 +174,7 @@ function Products() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Rec6}
                       title=""
                     />
                   </CardActionArea>
@@ -200,7 +206,7 @@ function Products() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Rec7}
                       title=""
                     />
                   </CardActionArea>
