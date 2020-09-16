@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
   aboutTitle: {
     //float:"left",
     fontWeight: 800,
-    paddingBottom: theme.spacing(3)
+    paddingBottom: theme.spacing(3),
+    color:  "#1976d2",
   },
   card: {
     maxWidth: "100%"
@@ -57,7 +58,7 @@ function About() {
 
         <Container maxWidth="lg" className={classes.aboutSection}>
             <Typography variant="h4" className={classes.aboutTitle}>
-              About Us
+              ABOUT US
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>

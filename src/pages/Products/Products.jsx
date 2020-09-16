@@ -65,7 +65,8 @@ const useStyles = makeStyles((theme) => ({
   productTitle: {
     //float:"left",
     fontWeight: 800,
-    paddingBottom: theme.spacing(3)
+    paddingBottom: theme.spacing(3),
+    color:  "#1976d2",
   },
   card: {
     maxWidth: "100%"
@@ -99,7 +100,7 @@ function Products() {
             </Typography> */}
             {/* <Drugs drugs={drugs} /> */}
             <Typography variant="h4" className={classes.productTitle}>
-              Products
+              PRODUCTS
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={6}>
