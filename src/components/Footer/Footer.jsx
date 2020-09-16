@@ -10,19 +10,27 @@ import { Card, CardMedia, CardContent, CardActionArea, Paper, Box, Button } from
 // CardActions
 const useStyles = makeStyles((theme) => ({
   footerSection: {
-    paddingTop: theme.spacing(3)
+    paddingTop: theme.spacing(3),
+    backgroundColor: "#1976d2",
+    minWidth: "100%" ,
+    color: "white",
+    fontSize: "14px",
   },
 footerTitle: {
     //float:"left",
     fontWeight: 400,
-    paddingBottom: theme.spacing(3)
+    paddingBottom: theme.spacing(1)
   },
   txt: {
     textAlign: 'left',
   },
+  list: {
+    listStyleType: "none" ,
+    textAlign: 'left',
+  },
   bottom: {
     borderTopStyle: 'solid',
-    // border-top-width: 1px;
+    borderTopWidth: "1px",
     // border-top-color: black;  
   },
   aboutBelow: {
@@ -45,9 +53,9 @@ function Footer() {
               Envato Care
             </Typography>
             <div>
-              For decades we have broken multiple barriers in
-              the provision of care for human kind. We are not
-              goin to stop any time soon, we are on a mission
+              For decades we have broken multiple barriers in <br/>
+              the provision of care for human kind. We are not <br/>
+              goin to stop any time soon, we are on a mission <br/>
               to rid the world of all diseases.
             </div> 
           </Grid>
@@ -55,13 +63,15 @@ function Footer() {
             <Typography variant="h6" className={classes.footerTitle}>
               Quick Link
             </Typography>
-              <div>Cart</div>
-              <div>About Us</div> 
-              <div>Services</div> 
-              <div>Products</div> 
-              <div>Contact</div>
+              {/* <ul className={classes.list}> */}
+                <div>Cart</div> 
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Products</div>
+                <div>Contact</div>
+              {/* </ul> */}
           </Grid>
-          <Grid item xs={4} sm={4} md={4} className={classes.txt}>
+          <Grid item xs={3} sm={3} md={3} className={classes.txt}>
             <Typography variant="h6" className={classes.footerTitle}>
               Contact
             </Typography>

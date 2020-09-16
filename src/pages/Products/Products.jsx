@@ -94,10 +94,10 @@ function Products() {
       <div>
 
         <Container maxWidth="lg" className={classes.productSection}>
-            <Typography variant="h4" className={classes.productTitle}>
+            {/* <Typography variant="h4" className={classes.productTitle}>
               Drugs
-            </Typography>
-            <Drugs drugs={drugs} />
+            </Typography> */}
+            {/* <Drugs drugs={drugs} /> */}
             <Typography variant="h4" className={classes.productTitle}>
               Products
             </Typography>
