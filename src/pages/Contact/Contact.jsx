@@ -26,13 +26,21 @@ const useStyles = makeStyles((theme) => ({
   aboutBelow: {
     paddingTop: theme.spacing(4)
   },  
-  img: {
-    paddingTop: "75px",
-    height: "360px"    
+  left: {
+    // paddingTop: "75px",
+    // height: "360px"    
+    width: "50%"
+
   },
   right: {
-    textAlign: "left",
-    paddingTop: "130px"
+    // textAlign: "left",
+    // paddingTop: "130px"
+    backgroundColor: "#1976d2",
+    width: "50%",
+    color: "white",
+    height: "500px",
+    float: "right"
+
   },  
   circle: {
     width: "500px",
@@ -59,7 +67,18 @@ function Contact() {
             <Typography variant="h4" className={classes.contactTitle}>
               CONTACT US
             </Typography>
-            
+            <Grid container justify="center" >
+              <Grid item xs={8} md={8} sm={8}>
+                <div className={classes.mainBody}>
+                  <div className={classes.left}>
+
+                  </div>
+                  <div className={classes.right}>
+
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
         </Container>
 
       </div>
