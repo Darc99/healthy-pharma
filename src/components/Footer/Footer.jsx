@@ -10,7 +10,7 @@ import { Card, CardMedia, CardContent, CardActionArea, Paper, Box, Button } from
 // CardActions
 const useStyles = makeStyles((theme) => ({
   footerSection: {
-    paddingTop: theme.spacing(3),
+    paddingTop: theme.spacing(7),
     backgroundColor: "#1976d2",
     minWidth: "100%" ,
     color: "white",
