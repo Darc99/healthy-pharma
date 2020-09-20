@@ -56,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     paddingLeft: "150px"
   },
+  rightThree : {
+    paddingTop: "40px",
+    paddingLeft: "22%"
+  },
   form: {
     width: "60%",
     paddingTop: theme.spacing(2),
@@ -136,9 +140,17 @@ function Contact() {
                         </Typography>
                         {/* <span> */}
                           
-                          <Typography align="left" variant="caption"  className={classes.rightTwo}>
+                          <Typography align="left" variant="h6"  className={classes.rightThree}>
                             <DesktopMacOutlined fontSize="default"/>
-                            <span>evantocare@somemail.com</span> 
+                            <a href="mailto:evantocare@someemail.com">evantocare@someemail.com</a>
+                          </Typography>
+                          <Typography align="left" variant="h6"  className={classes.rightThree}>
+                            <DesktopMacOutlined fontSize="default"/>
+                            <span>+233-898-413-0413</span>
+                          </Typography>
+                          <Typography align="left" variant="h6"  className={classes.rightThree}>
+                            <DesktopMacOutlined fontSize="default"/>
+                            <span>Western Seas, Illinois</span>
                           </Typography>
                         {/* </span> */}
                       </span>
