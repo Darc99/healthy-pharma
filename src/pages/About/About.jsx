@@ -1,5 +1,8 @@
 import React from 'react';
 import About1 from '../../img/image1.png';
+import Drug from '../../img/Drug.png';
+import Doctor from '../../img/Doctor.png';
+import Safe from '../../img/Safe.png';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -22,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%"
   },
   media: {
-    height: 240
+    width: 200,
+    height: 200
   },
   aboutBelow: {
     paddingTop: theme.spacing(4)
@@ -66,7 +70,7 @@ function About() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Drug}
                       title=""
                     />
                     <CardContent>
@@ -87,7 +91,7 @@ function About() {
                     <CardActionArea>
                       <CardMedia 
                         className={classes.media}
-                        image=""
+                        image={Doctor}
                         title=""
                       />
                       <CardContent>
@@ -108,7 +112,7 @@ function About() {
                   <CardActionArea>
                     <CardMedia 
                       className={classes.media}
-                      image=""
+                      image={Safe}
                       title=""
                     />
                     <CardContent>
