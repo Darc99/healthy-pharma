@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     width: 200,
-    height: 200
+    height: 200,
+    marginLeft: "25%"
   },
   aboutBelow: {
     paddingTop: theme.spacing(4)
