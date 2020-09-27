@@ -13,7 +13,8 @@ import { Card, CardMedia, CardContent, CardActionArea, Paper, Box, Button } from
 // CardActions
 const useStyles = makeStyles((theme) => ({
   aboutSection: {
-    paddingTop: theme.spacing(3)
+    paddingTop: theme.spacing(23),
+    position: "relative",
   },
   aboutTitle: {
     //float:"left",

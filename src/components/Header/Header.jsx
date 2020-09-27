@@ -8,7 +8,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "white",
-    float: "left"
+    float: "left",
+    position: "relative"
   },    
   menuButton: {
     marginRight: theme.spacing(2),
@@ -24,7 +25,7 @@ function Header() {
     return (
 
       <div>
-        <AppBar className={classes.appBar} position="static">
+        <AppBar className={classes.appBar} position="fixed">
           <Toolbar>
             <Typography variant="h6" color="primary" className={classes.title}>
               Envato Care
